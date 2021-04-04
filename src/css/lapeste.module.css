@@ -1,0 +1,59 @@
+.peste {
+    padding: 4rem 0;
+  }
+  .peste-center {
+    width: 75vw;
+    margin: 0 auto;
+  }
+  .peste-img {
+    margin: 3rem 0;
+  }
+  .peste-info {
+    margin-top: 1.5rem;
+  }
+  /*.peste-img {
+    position: relative;
+  }*/ 
+  .peste-info h4 {
+    font-size: 1.9rem;
+    font-style: italic;
+    /*text-transform: uppercase;*/
+  }
+  .about-img {
+    margin: 3rem 0;
+  }
+  .about-info {
+    margin-top: 3rem 0;
+  }
+  .about-img {
+    position: relative;
+  }
+  .blockquote{  
+    font-size: 1.35rem;
+    line-height: 1.55;
+    font-style: italic;
+    font-family: "URWDIN-Light", sans-serif;
+    margin-top: 1rem;
+    margin-bottom: 1rem;    
+    /*border-left: 3px solid #ccc;*/ 
+}
+@media screen and (min-width: 992px) {
+  .img-container::before {
+    /*content: "";
+    position: absolute;
+    width: 75%;
+    height: 100%;
+    border: 3px solid var(--primaryColor);
+    box-sizing: border-box;
+    top: -16px;
+    left: -16px;*/
+    z-index: -1;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .center {
+    width: 60% !important;
+    /*max-width: 1170vw;*/
+  }
+  
+}

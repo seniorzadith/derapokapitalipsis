@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Amelia-Script';
+    src: local('Amelia'), url(../components/fonts/Amelia-Script.woff format('woff');
+}
+@font-face {
+    font-family: 'P22Vincent';
+    src: local('P22Vincent'), url(../components/fonts/P22Vincent-Regular.ttf format('truetype');
+}
+@font-face {
+    font-family: 'Parkershand';
+    src: local('Parkershand'), url(../components/fonts/Parkershand-Regular.ttf format('truetype');
+}

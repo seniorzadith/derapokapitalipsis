@@ -1,0 +1,89 @@
+fragment Preproyecto on Preproyecto {
+  stage
+  remoteId: id
+  createdAt
+  createdBy {
+    ... on User {
+      remoteTypeName: __typename
+      remoteId: id
+      stage
+    }
+  }
+  updatedAt
+  updatedBy {
+    ... on User {
+      remoteTypeName: __typename
+      remoteId: id
+      stage
+    }
+  }
+  publishedAt
+  publishedBy {
+    ... on User {
+      remoteTypeName: __typename
+      remoteId: id
+      stage
+    }
+  }
+  tituloPreproyecto
+  slug
+  preproyectoDestacado
+  sinopsis
+  imagenBannerPreproyecto {
+    ... on Asset {
+      remoteTypeName: __typename
+      remoteId: id
+      locale
+      stage
+    }
+  }
+  imagenFundamentosPreproyecto {
+    ... on Asset {
+      remoteTypeName: __typename
+      remoteId: id
+      locale
+      stage
+    }
+  }
+  fundamentos {
+    ... on RichText {
+      raw
+      html
+      markdown
+      text
+    }
+  }
+  imagenConcrecionPreproyecto {
+    ... on Asset {
+      remoteTypeName: __typename
+      remoteId: id
+      locale
+      stage
+    }
+  }
+  concrecion {
+    ... on RichText {
+      raw
+      html
+      markdown
+      text
+    }
+  }
+  imagenResultadosPreproyecto {
+    ... on Asset {
+      remoteTypeName: __typename
+      remoteId: id
+      locale
+      stage
+    }
+  }
+  resultados {
+    ... on RichText {
+      raw
+      html
+      markdown
+      text
+    }
+  }
+  publicado
+}

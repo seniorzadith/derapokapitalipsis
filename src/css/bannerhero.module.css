@@ -1,0 +1,39 @@
+.banner {
+    text-align: center;
+    letter-spacing: var(--mainSpacing);
+    color: var(--mainWhite);
+  }
+  .banner h1 {
+    font-family: "KG All of Me" !important; 
+    font-size: 1.9rem;
+    /*text-transform: uppercase;*/
+    margin-bottom: 1.2rem !important;
+    padding: 0 1rem;
+    letter-spacing: 6px;
+  }
+  .banner p {
+    /*width: 100%;*/
+    margin:  auto;
+    margin-bottom: 2rem;
+    font-family: 'URWDIN-Light', sans-serif;
+    font-size: 0.8rem;
+    font-style: italic;
+  }
+  .marca {
+    color: rgb(252, 64, 7) !important;
+  }
+  .margen{
+    margin-top: 1rem;
+  }
+  @media screen and (min-width: 768px) {
+    .banner h1 {
+      font-size: 4rem;
+      margin-bottom: 1.5rem;
+    }
+    .banner p {
+      margin-top: 1.5rem !important;
+      font-size: 1.2rem;
+      /*width: 60%;*/
+     
+    }
+  }

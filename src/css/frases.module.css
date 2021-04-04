@@ -1,0 +1,22 @@
+.frases {
+    background: var(--mainGrey);
+    padding: 3rem 0;
+    font-family: "ML Elusive Dream Monoline" !important;
+    font-size: 2rem;
+    line-height: 2.2rem;;
+  }
+  .center {
+    width: 75vw;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-column-gap: 2rem;
+  }
+  .frase {
+    margin: 1rem 0;
+    text-align: left;
+    font-style: italic;
+  }
+  
+ 
+  

@@ -1,0 +1,96 @@
+fragment Blog on Blog {
+  stage
+  remoteId: id
+  createdAt
+  createdBy {
+    ... on User {
+      remoteTypeName: __typename
+      remoteId: id
+      stage
+    }
+  }
+  updatedAt
+  updatedBy {
+    ... on User {
+      remoteTypeName: __typename
+      remoteId: id
+      stage
+    }
+  }
+  publishedAt
+  publishedBy {
+    ... on User {
+      remoteTypeName: __typename
+      remoteId: id
+      stage
+    }
+  }
+  titulo
+  slug
+  subtitulo
+  resumen
+  imagenPortadaBlog {
+    ... on Asset {
+      remoteTypeName: __typename
+      remoteId: id
+      locale
+      stage
+    }
+  }
+  imagenPrefacioBlog {
+    ... on Asset {
+      remoteTypeName: __typename
+      remoteId: id
+      locale
+      stage
+    }
+  }
+  prefacio {
+    ... on RichText {
+      raw
+      html
+      markdown
+      text
+    }
+  }
+  imagenCorpusBlog {
+    ... on Asset {
+      remoteTypeName: __typename
+      remoteId: id
+      locale
+      stage
+    }
+  }
+  corpus {
+    ... on RichText {
+      raw
+      html
+      markdown
+      text
+    }
+  }
+  imagenEpilogoBlog {
+    ... on Asset {
+      remoteTypeName: __typename
+      remoteId: id
+      locale
+      stage
+    }
+  }
+  epilogo {
+    ... on RichText {
+      raw
+      html
+      markdown
+      text
+    }
+  }
+  persona {
+    ... on Persona {
+      remoteTypeName: __typename
+      remoteId: id
+      stage
+    }
+  }
+  numeroPublicacion
+}

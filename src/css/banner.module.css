@@ -1,0 +1,35 @@
+.banner {
+  text-align: center;
+  letter-spacing: var(--mainSpacing);
+  color: var(--mainWhite);
+}
+.banner h1 {
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem !important;
+  padding: 0 1rem;
+  letter-spacing: 6px;
+}
+.banner p {
+  width: 85%;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  font-family: 'URWDIN-Light', sans-serif;
+  font-size: 1rem;
+  font-style: italic;
+}
+.marca {
+  color: darkorange !important;
+}
+.margen{
+  margin-top: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .banner h1 {
+    font-size: 4.5rem;
+  }
+  .banner p {
+    width: 60%;
+   
+  }
+}

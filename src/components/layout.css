@@ -1,0 +1,132 @@
+@import "./fonts.css";
+
+body {
+  color: hsla(0, 0%, 0%, 0.8);
+  font-family: "URWDIN-Light", sans-serif;
+  font-weight: normal;
+  word-wrap: break-word;
+  font-kerning: normal;
+}
+
+:root {
+  --primaryColor: #3fd0d4;
+  --mainWhite: #fff;
+  --offWhite: #f7f7f7;
+  --mainBlack: #222;
+  --mainGrey: #ececec;
+  --darkGrey: #aa9f9f;
+  --ultraGrey: #8f8c8c ;
+  --mainTransition: all 0.3s linear;
+  --mainSpacing: 4px;
+  --lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
+  --darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "URWDIN-Light", sans-serif;
+  color: var(--mainBlack);
+  background: var(--mainWhite);
+  line-height: 1.5rem;
+  font-size: 1rem;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "URWDIN-Bold", sans-serif;
+  margin-bottom: 1.25rem;
+  letter-spacing: var(--mainSpacing);
+  line-height: 1.40rem;
+}
+p {
+  margin-bottom: 1.25rem;
+}
+a {
+  text-decoration: none;
+}
+.defaultHero {
+  min-height: calc(75vh - 42px);
+  background: linear-gradient(rgba(96, 181, 207, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../images/default.png") center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-white,
+.btn-primary {
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: var(--mainSpacing);
+  color: var(--mainWhite);
+  border: 2px solid var(--mainWhite);
+  padding: 0.5rem 1.2rem;
+  display: inline-block;
+  transition: var(--mainTransition);
+  cursor: pointer;
+}
+.btn-white:hover {
+  background: var(--mainWhite);
+  color: var(--primaryColor);
+}
+.btn-primary {
+  background: var(--primaryColor);
+  color: var(--mainWhite);
+  border: 2px solid var(--primaryColor);
+}
+.btn-primary:hover {
+  background: transparent;
+  color: var(--primaryColor);
+}
+main{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+blockquote{
+  
+    font-size: 1.15rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    line-height: 1.35;
+    font-style: italic;       
+    margin-bottom: 1.25rem;    
+    /*border-left: 3px solid #ccc;*/
+ 
+}
+.titulo {
+  text-transform: uppercase !important;
+  letter-spacing: var(--mainSpacing);
+  margin-bottom: 1rem;
+}
+.parrafo{
+  margin-top: 1rem !important;
+}
+.italica {
+  font-style: italic;
+  letter-spacing: var(--mainSpacing);
+  margin-bottom: 1rem;
+}
+.centrado{
+  text-align: center;
+  margin: 0.5rem auto !important;
+}
+.banner {
+  text-align: center;
+  letter-spacing: var(--mainSpacing);
+  color: var(--mainWhite);
+}
+/* .gatsby-image-wrapper {
+  max-height: 600px;
+} */
+
+/*
+PESTE
+*/

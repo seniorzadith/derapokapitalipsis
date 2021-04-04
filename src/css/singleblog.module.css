@@ -1,0 +1,28 @@
+.blog {
+    padding: 4rem 0;
+  }
+  .center {
+    width: 66vw;
+    margin: 0 auto;
+  }
+  .blog h1,
+  .blog h4 {
+    text-transform: capitalize;
+  }
+  .post {
+    margin: 2rem 0;
+  }
+  .post img {
+    max-width: 70vw;
+  }
+  .parrafito{
+    margin-top: 1.5rem;
+  }
+  .next{
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.25rem;
+  }
+  .image {
+    box-shadow: var(--lightShadow);
+  }
