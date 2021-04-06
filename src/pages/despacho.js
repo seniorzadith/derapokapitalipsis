@@ -10,7 +10,7 @@ const despacho = ({ data }) => {
   return (
     <Layout>
       <Seo title="Despacho" />
-      <StyledHero img={data.defaultDespacho.childImageSharp.gatsbyImageData} />
+      <StyledHero img={data.defaultDespacho.childImageSharp.fluid} />
       <DespachoList/>
     </Layout>
   );
@@ -19,7 +19,9 @@ const despacho = ({ data }) => {
 export const query = graphql`{
   defaultDespacho: file(relativePath: {eq: "banner/defaultDespacho.png"}) {
     childImageSharp {
-      gatsbyImageData(quality: 90, layout: FULL_WIDTH)
+      fluid(quality: 90, maxWidth: 4160) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
     }
   }
 }

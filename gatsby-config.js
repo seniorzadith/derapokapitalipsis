@@ -38,8 +38,7 @@ module.exports = {
         sitemap: 'https://apodaskapitalipsis.netlify.app/sitemap.xml',
         policy: [{ userAgent: '*', allow: '/' }]
       }
-    },
-    'gatsby-plugin-postcss',
+    },    
     `gatsby-plugin-mdx`,
     `gatsby-plugin-styled-components`,    
     `gatsby-plugin-transition-link`,

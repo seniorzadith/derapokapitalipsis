@@ -13,7 +13,7 @@ const peste = ({data}) => {
   return (
     <Layout>      
       <Seo title="la peste de albert camus rediviva" />
-      <StyledHero img={data.defaultPeste.childImageSharp.gatsbyImageData} />      
+      <StyledHero img={data.defaultPeste.childImageSharp.fluid} />      
       <Lapeste/>      
       <Alternativas/>
       <AniLink fade to="/peste/" className="btn-primary centrado">
@@ -26,7 +26,9 @@ const peste = ({data}) => {
 export const query = graphql`{
   defaultPeste: file(relativePath: {eq: "intros/lapeste.jpg"}) {
     childImageSharp {
-      gatsbyImageData(quality: 90, layout: FULL_WIDTH)
+      fluid(quality: 90, maxWidth: 4160) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
     }
   }
 }

@@ -10,7 +10,7 @@ export default function contact({ data }) {
   return (
     <Layout>
       
-      <StyledHero img={data.defaultContact.childImageSharp.gatsbyImageData} />
+      <StyledHero img={data.defaultContact.childImageSharp.fluid} />
       <Contact />
     </Layout>
   );
@@ -19,7 +19,9 @@ export default function contact({ data }) {
 export const query = graphql`{
   defaultContact: file(relativePath: {eq: "banner/defaultContact.png"}) {
     childImageSharp {
-      gatsbyImageData(quality: 90, layout: FULL_WIDTH)
+      fluid(quality: 90, maxWidth: 4160) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
     }
   }
 }
