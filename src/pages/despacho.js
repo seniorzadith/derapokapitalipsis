@@ -10,22 +10,19 @@ const despacho = ({ data }) => {
   return (
     <Layout>
       <Seo title="Despacho" />
-      <StyledHero img={data.defaultDespacho.childImageSharp.fluid} />
+      <StyledHero img={data.defaultDespacho.childImageSharp.gatsbyImageData} />
       <DespachoList/>
     </Layout>
-  )
+  );
 }
 
-export const query = graphql`
-  query {
-    defaultDespacho: file(relativePath: { eq: "banner/defaultDespacho.png" }) {
-      childImageSharp {
-        fluid(quality: 90, maxWidth: 4160) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
+export const query = graphql`{
+  defaultDespacho: file(relativePath: {eq: "banner/defaultDespacho.png"}) {
+    childImageSharp {
+      gatsbyImageData(quality: 90, layout: FULL_WIDTH)
     }
   }
+}
 `
 
 export default despacho

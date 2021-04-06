@@ -1,19 +1,16 @@
 import React from "react"
 import {peste, pesteCenter,  pesteInfo, imgContainer, pesteImg} from "../../css/lapeste.module.css"
 import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image";
 import Title from "../Title"
 
-const getPeste = graphql`
-  query pesteImg {
-    pesteImage: file(relativePath: { eq: "lapeste/camus_001.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 500) {
-          ...GatsbyImageSharpFluid_tracedSVG
-        }
-      }
+const getPeste = graphql`query pesteImg {
+  pesteImage: file(relativePath: {eq: "lapeste/camus_001.png"}) {
+    childImageSharp {
+      gatsbyImageData(width: 500, placeholder: TRACED_SVG, layout: CONSTRAINED)
     }
   }
+}
 `
 
 const Lapeste = () => {
@@ -35,10 +32,7 @@ const Lapeste = () => {
 
           <article className={pesteImg}>
           <div className={imgContainer}>
-          <Img
-              fluid={pesteImage.childImageSharp.fluid}
-              alt="Pelinski"
-            />
+          <GatsbyImage image={pesteImage.childImageSharp.gatsbyImageData} alt="Pelinski" />
           </div>
           </article>
           <article className={pesteInfo}>
@@ -48,7 +42,7 @@ const Lapeste = () => {
          </article>        
       </div>
     </div>
-  )
+  );
 }
 
 export default Lapeste

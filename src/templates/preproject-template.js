@@ -3,7 +3,8 @@ import { graphql } from "gatsby"
 import Layout from "../components/Layout"
 import StyledHero from "../components/StyledHero"
 import {template, center, images, image, parrafo  }from "../css/template.module.css"
-import Image from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image";
+//import { GatsbyImage } from "gatsby-plugin-image"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 
 const Template = ({ data }) => {  
@@ -22,14 +23,17 @@ const Template = ({ data }) => {
 
   return (
     <Layout>
-      <StyledHero img={imagenBannerPreproyecto.localFile.childImageSharp.fluid} />
+      <StyledHero img={imagenBannerPreproyecto.localFile.childImageSharp.gatsbyImageData} />
       <section className={template}>       
         <div className={center}>
           <h2>{tituloPreproyecto}</h2>
           <p>{sinopsis}</p>
           <p>Publicado:{publicado}</p>
           <div className={images}>
-          <Image  fluid={imagenFundamentosPreproyecto.localFile.childImageSharp.fluid} alt="Fundamentos" className={image}/>
+          <GatsbyImage
+            image={imagenFundamentosPreproyecto.localFile.childImageSharp.gatsbyImageData}
+            alt="Fundamentos"
+            className={image} />
           </div>
           <div>
           <MDXRenderer>
@@ -37,7 +41,10 @@ const Template = ({ data }) => {
           </MDXRenderer>
           </div>   
           <div className={images}>
-          <Image  fluid={imagenConcrecionPreproyecto.localFile.childImageSharp.fluid} alt="Concreción" className={image}/>
+          <GatsbyImage
+            image={imagenConcrecionPreproyecto.localFile.childImageSharp.gatsbyImageData}
+            alt="Concreción"
+            className={image} />
           </div>
           <div>
           <MDXRenderer>
@@ -45,7 +52,10 @@ const Template = ({ data }) => {
           </MDXRenderer>
           </div>  
           <div>
-          <Image  fluid={imagenResultadosPreproyecto.localFile.childImageSharp.fluid} alt="Resultados" className={image}/>
+          <GatsbyImage
+            image={imagenResultadosPreproyecto.localFile.childImageSharp.gatsbyImageData}
+            alt="Resultados"
+            className={image} />
           </div>
           <div className={parrafo}> 
           <MDXRenderer>
@@ -55,69 +65,60 @@ const Template = ({ data }) => {
         </div>    
       </section>    
     </Layout>
-  )  
+  );  
 }
 
 
-export const query = graphql`
-query($slug:String!){
-  preproject: graphCmsPreproyecto(slug:{eq:$slug}){
+export const query = graphql`query ($slug: String!) {
+  preproject: graphCmsPreproyecto(slug: {eq: $slug}) {
     tituloPreproyecto
-    publicado   
-    imagenBannerPreproyecto{
-      localFile{
-        childImageSharp{
-          fluid{
-            ...GatsbyImageSharpFluid_tracedSVG
-          }
-        }
-      }
-    }    
-    imagenFundamentosPreproyecto{
-      localFile{
-        childImageSharp{
-          fluid{
-            ...GatsbyImageSharpFluid_tracedSVG
-          }
+    publicado
+    imagenBannerPreproyecto {
+      localFile {
+        childImageSharp {
+          gatsbyImageData(placeholder: TRACED_SVG, layout: FULL_WIDTH)
         }
       }
     }
-    imagenConcrecionPreproyecto{
-     localFile{
-        childImageSharp{
-          fluid{
-            ...GatsbyImageSharpFluid_tracedSVG
-          }
+    imagenFundamentosPreproyecto {
+      localFile {
+        childImageSharp {
+          gatsbyImageData(placeholder: TRACED_SVG, layout: FULL_WIDTH)
         }
       }
-    }    
-    imagenResultadosPreproyecto{
-      localFile{
-        childImageSharp{
-          fluid{
-            ...GatsbyImageSharpFluid_tracedSVG
-          }
+    }
+    imagenConcrecionPreproyecto {
+      localFile {
+        childImageSharp {
+          gatsbyImageData(placeholder: TRACED_SVG, layout: FULL_WIDTH)
+        }
+      }
+    }
+    imagenResultadosPreproyecto {
+      localFile {
+        childImageSharp {
+          gatsbyImageData(placeholder: TRACED_SVG, layout: FULL_WIDTH)
         }
       }
     }
     sinopsis
-    fundamentos{
-      markdownNode{
-        childMdx{
+    fundamentos {
+      markdownNode {
+        childMdx {
           body
         }
       }
     }
-    concrecion{
-      markdownNode{
-        childMdx{
+    concrecion {
+      markdownNode {
+        childMdx {
           body
         }
       }
     }
-    resultados{
-      markdownNode{
-        childMdx{
+    resultados {
+      markdownNode {
+        childMdx {
           body
         }
       }

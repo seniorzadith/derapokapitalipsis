@@ -1,7 +1,7 @@
 import React from "react"
 import {proproject, imgContainer, img, link, footer, info, aire} from "../../css/preproject.module.css"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
-import Image from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image";
 import PropTypes from "prop-types"
 
 const Preproject = ({ preproject }) => {
@@ -10,7 +10,10 @@ const Preproject = ({ preproject }) => {
   return (
     <article className={proproject}>
       <div className={imgContainer}>
-        <Image fluid={imagenBannerPreproyecto.localFile.childImageSharp.fluid} className={img} alt="Proyecto" />
+        <GatsbyImage
+          image={imagenBannerPreproyecto.localFile.childImageSharp.gatsbyImageData}
+          className={img}
+          alt="Proyecto" />
         <AniLink fade className={link} to={`/preprojects/${slug}`} >
           detalles
         </AniLink>
@@ -23,7 +26,7 @@ const Preproject = ({ preproject }) => {
         
       </div>
     </article>
-  )
+  );
 }
 
 Preproject.propTypes = {

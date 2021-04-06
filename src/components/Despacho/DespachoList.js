@@ -4,29 +4,26 @@ import Title from "../Title"
 import { useStaticQuery, graphql } from "gatsby"
 import {despacho, center} from "../../css/despacho.module.css"
 
-const getDespachos = graphql`
-query{
-    despachos: allGraphCmsDespacho(sort:{fields:publicado, order:DESC}){
-      edges{
-        node{
-          slug
-          encabezado
-          id
-          remoteId
-          publicado
-          bajada          
-          caricaturaEditorial{            
-              localFile{
-              childImageSharp{
-                fluid{
-                    ...GatsbyImageSharpFluid_tracedSVG
-                }
-              }
+const getDespachos = graphql`{
+  despachos: allGraphCmsDespacho(sort: {fields: publicado, order: DESC}) {
+    edges {
+      node {
+        slug
+        encabezado
+        id
+        remoteId
+        publicado
+        bajada
+        caricaturaEditorial {
+          localFile {
+            childImageSharp {
+              gatsbyImageData(placeholder: TRACED_SVG, layout: FULL_WIDTH)
             }
           }
-        }        
+        }
       }
     }
+  }
 }
 `
 const DespachoList = () => {

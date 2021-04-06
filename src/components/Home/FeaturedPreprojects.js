@@ -5,32 +5,28 @@ import Title from "../Title"
 import {items, center} from "../../css/items.module.css"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 
-const getPreprojects = graphql`
- query {
-    preprojects: allGraphCmsPreproyecto(filter:{preproyectoDestacado: {eq:true}}){
-      edges{
-        node{          
-          id
-          tituloPreproyecto
-          publicado
-          slug         
-          remoteId
-          sinopsis
-          imagenBannerPreproyecto{            
-            url
-            localFile {
-              childImageSharp {
-                fluid {
-                  ...GatsbyImageSharpFluid_tracedSVG
-                }
-              }
-            } 
-          }          
+const getPreprojects = graphql`{
+  preprojects: allGraphCmsPreproyecto(filter: {preproyectoDestacado: {eq: true}}) {
+    edges {
+      node {
+        id
+        tituloPreproyecto
+        publicado
+        slug
+        remoteId
+        sinopsis
+        imagenBannerPreproyecto {
+          url
+          localFile {
+            childImageSharp {
+              gatsbyImageData(placeholder: TRACED_SVG, layout: FULL_WIDTH)
+            }
+          }
         }
       }
-    }   
+    }
   }
-
+}
 `
 
 const FeaturedPreprojects = () => {

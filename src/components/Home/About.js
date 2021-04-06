@@ -2,19 +2,15 @@ import React from "react"
 import Title from "../Title"
 import {about, aboutCenter, aboutImg, imgContainer, aboutInfo} from "../../css/about.module.css"
 import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image";
 
-const getAbout = graphql`
-  query aboutImage {
-    aboutImage: file(relativePath: { eq: "gente/peli_repollo.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 600) {
-          ...GatsbyImageSharpFluid_tracedSVG
-        }
-      }
+const getAbout = graphql`query aboutImage {
+  aboutImage: file(relativePath: {eq: "gente/peli_repollo.png"}) {
+    childImageSharp {
+      gatsbyImageData(width: 600, placeholder: TRACED_SVG, layout: CONSTRAINED)
     }
   }
-`
+}`
 
 const About = () => {
     const { aboutImage } = useStaticQuery(getAbout)  
@@ -24,10 +20,7 @@ const About = () => {
       <div className={aboutCenter}>
         <article className={aboutImg}>
           <div className={imgContainer}>
-          <Img
-              fluid={aboutImage.childImageSharp.fluid}
-              alt="Pelinski"
-            />
+          <GatsbyImage image={aboutImage.childImageSharp.gatsbyImageData} alt="Pelinski" />
           </div>
         </article>
         <article className={aboutInfo}>
@@ -60,7 +53,7 @@ const About = () => {
         </article>
       </div>
     </section>
-  )
+  );
 }
 
 export default About

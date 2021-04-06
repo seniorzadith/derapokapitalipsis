@@ -4,23 +4,20 @@ import Title from "../Title"
 import { useStaticQuery, graphql } from "gatsby"
 import {blog, center} from "../../css/blog.module.css"
 
-const getPosts = graphql`
-  query{
-  posts: allGraphCmsBlog(sort:{fields:numeroPublicacion, order:DESC}){
-    edges{
-      node{
+const getPosts = graphql`{
+  posts: allGraphCmsBlog(sort: {fields: numeroPublicacion, order: DESC}) {
+    edges {
+      node {
         titulo
         slug
         id
         numeroPublicacion
-        remoteId  
+        remoteId
         resumen
-        imagenPortadaBlog{
-          localFile{
-            childImageSharp{
-              fluid{
-                ...GatsbyImageSharpFluid_tracedSVG
-              }
+        imagenPortadaBlog {
+          localFile {
+            childImageSharp {
+              gatsbyImageData(placeholder: TRACED_SVG, layout: FULL_WIDTH)
             }
           }
         }

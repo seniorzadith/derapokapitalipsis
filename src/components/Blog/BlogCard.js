@@ -1,6 +1,6 @@
 import React from "react"
 import {quipu, imgContainer, img, link, footer} from "../../css/blogcard.module.css"
-import Image from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image";
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 const BlogCard = ({ blog }) => {
@@ -8,7 +8,10 @@ const BlogCard = ({ blog }) => {
   return (
     <article className={quipu}>
       <div className={imgContainer}>
-        <Image fluid={imagenPortadaBlog.localFile.childImageSharp.fluid} className={img} alt="Quipu" />
+        <GatsbyImage
+          image={imagenPortadaBlog.localFile.childImageSharp.gatsbyImageData}
+          className={img}
+          alt="Quipu" />
         <AniLink fade className={link} to={`/blog/${slug}`}>          
           in extenso        
         </AniLink>        
@@ -21,7 +24,7 @@ const BlogCard = ({ blog }) => {
         </AniLink>        
       </div>               
     </article>
-  )
+  );
 }
 
 export default BlogCard

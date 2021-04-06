@@ -4,18 +4,15 @@ import vinculos from "../constants/links"
 import socialIcons from "../constants/social-icons"
 import AniLink from "gatsby-plugin-transition-link/AniLink";
 import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image";
 
-const getPeli = graphql`
-  query peliImage {
-    peliImage: file(relativePath: { eq: "logos/peli_naranja.png" }) {
-      childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid
-        }
-      }
+const getPeli = graphql`query peliImage {
+  peliImage: file(relativePath: {eq: "logos/peli_naranja.png"}) {
+    childImageSharp {
+      gatsbyImageData(layout: FULL_WIDTH)
     }
   }
+}
 `
 
 const Footer = () => {
@@ -23,10 +20,7 @@ const Footer = () => {
   return (
     <footer className={footer}>
       <div className={logo}>
-      <Img
-        fluid={peliImage.childImageSharp.fluid}
-        alt="Peli" 
-      />
+      <GatsbyImage image={peliImage.childImageSharp.gatsbyImageData} alt="Peli" />
       </div>
       <div className={copyright}>
        apokapitalipsis {new Date().getFullYear()} 
@@ -56,7 +50,7 @@ const Footer = () => {
       </div>
       <p  className={credito}>DISEÑADO POR PELI CON BASE EN SMILGA UTILIZANDO GATSBY + GRAPHCMS. GRACIAS</p>
     </footer>
-  )
+  );
 }
 
 export default Footer
