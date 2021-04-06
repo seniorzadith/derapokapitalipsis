@@ -4,7 +4,7 @@ import Layout from "../components/Layout"
 import {blog, center, image} from "../css/singleblog.module.css"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 import StyledHero from "../components/StyledHero"
-import { GatsbyImage } from "gatsby-plugin-image";
+import Image from "gatsby-image"
 //import { GatsbyImage } from "gatsby-plugin-image"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 
@@ -25,35 +25,26 @@ const Blog = ({ data }) => {
 
   return (
     <Layout>
-      <StyledHero img={imagenPortadaBlog.localFile.childImageSharp.gatsbyImageData} />
+      <StyledHero img={imagenPortadaBlog.localFile.childImageSharp.fluid} />
       <section className={blog}>
         <div className={center}>
           <h1 className="titulo">{titulo}</h1>
           <h3 className="italica"><em>{subtitulo}</em></h3>          
           <p>{resumen}</p>
           <div>
-            <GatsbyImage
-              image={imagenPrefacioBlog.localFile.childImageSharp.gatsbyImageData}
-              alt="Caligrafía 1"
-              className={image} />
+            <Image  fluid={imagenPrefacioBlog.localFile.childImageSharp.fluid} alt="Caligrafía 1" className={image}/>
           </div>
           <MDXRenderer>
              {prefacio.markdownNode.childMdx.body}
           </MDXRenderer>
           <div>
-            <GatsbyImage
-              image={imagenCorpusBlog.localFile.childImageSharp.gatsbyImageData}
-              alt="Caligrafía 2"
-              className={image} />
+            <Image  fluid={imagenCorpusBlog.localFile.childImageSharp.fluid} alt="Caligrafía 2" className={image}/>
           </div>
           <MDXRenderer>
              {corpus.markdownNode.childMdx.body}
           </MDXRenderer>
           <div>
-             <GatsbyImage
-               image={imagenEpilogoBlog.localFile.childImageSharp.gatsbyImageData}
-               alt="Caligrafía 3"
-               className={image} />
+             <Image  fluid={imagenEpilogoBlog.localFile.childImageSharp.fluid} alt="Caligrafía 3" className={image}/>
           </div>
           <MDXRenderer>
               {epilogo.markdownNode.childMdx.body}
@@ -64,26 +55,31 @@ const Blog = ({ data }) => {
         </div>
       </section>
     </Layout>
-  );
+  )
 }
 
-export const query = graphql`query getPost($slug: String!) {
-  post: graphCmsBlog(slug: {eq: $slug}) {
+export const query = graphql`
+query getPost($slug: String!) {
+  post: graphCmsBlog(slug: { eq: $slug }) {
     titulo
     resumen
     numeroPublicacion
     imagenPortadaBlog {
       localFile {
         childImageSharp {
-          gatsbyImageData(placeholder: TRACED_SVG, layout: FULL_WIDTH)
+          fluid {
+            ...GatsbyImageSharpFluid_tracedSVG
+          }
         }
       }
     }
     subtitulo
-    imagenPrefacioBlog {
+    imagenPrefacioBlog{
       localFile {
         childImageSharp {
-          gatsbyImageData(placeholder: TRACED_SVG, layout: FULL_WIDTH)
+          fluid {
+            ...GatsbyImageSharpFluid_tracedSVG
+          }
         }
       }
     }
@@ -94,10 +90,12 @@ export const query = graphql`query getPost($slug: String!) {
         }
       }
     }
-    imagenCorpusBlog {
+    imagenCorpusBlog{
       localFile {
         childImageSharp {
-          gatsbyImageData(placeholder: TRACED_SVG, layout: FULL_WIDTH)
+          fluid {
+            ...GatsbyImageSharpFluid_tracedSVG
+          }
         }
       }
     }
@@ -108,10 +106,12 @@ export const query = graphql`query getPost($slug: String!) {
         }
       }
     }
-    imagenEpilogoBlog {
+    imagenEpilogoBlog{
       localFile {
         childImageSharp {
-          gatsbyImageData(placeholder: TRACED_SVG, layout: FULL_WIDTH)
+          fluid {
+            ...GatsbyImageSharpFluid_tracedSVG
+          }
         }
       }
     }
@@ -127,4 +127,6 @@ export const query = graphql`query getPost($slug: String!) {
 `
 
 export default Blog
+
+
 
