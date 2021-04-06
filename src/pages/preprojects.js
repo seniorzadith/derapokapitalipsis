@@ -10,7 +10,7 @@ export default class preprojects extends Component {
     return (
       <Layout>
         <Seo title="Projects" />
-        <StyledHero img ={this.props.data.defaultProjects.childImageSharp.gatsbyImageData} />
+        <StyledHero img ={this.props.data.defaultProjects.childImageSharp.fluid} />
         <Preprojects/>
       </Layout>
     );
@@ -20,7 +20,9 @@ export default class preprojects extends Component {
 export const query = graphql`{
   defaultProjects: file(relativePath: {eq: "banner/defaultProjects.png"}) {
     childImageSharp {
-      gatsbyImageData(quality: 90, layout: FULL_WIDTH)
+      fluid(quality: 90, maxWidth: 4160) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
     }
   }
 }
