@@ -21,21 +21,24 @@ body {
   --lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
   --darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
 }
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
-body {
-  font-family: "URWDIN-Light", sans-serif;
+body {  
   color: var(--mainBlack);
   background: var(--mainWhite);
   line-height: 1.5rem;
   font-size: 1rem;
 }
-h1,
+h1{
+  font-family: "Trixie-Cameo" !important;
+  margin-bottom: 1.25rem;
+  letter-spacing: var(--mainSpacing);
+  line-height: 1.40rem;
+}
+/*h1,*/
 h2,
 h3,
 h4,
@@ -46,6 +49,7 @@ h6 {
   letter-spacing: var(--mainSpacing);
   line-height: 1.40rem;
 }
+
 p {
   margin-bottom: 1.25rem;
 }
@@ -64,6 +68,7 @@ a {
 .btn-primary {
   text-transform: uppercase;
   text-decoration: none;
+  font-style: italic;
   letter-spacing: var(--mainSpacing);
   color: var(--mainWhite);
   border: 2px solid var(--mainWhite);
@@ -90,16 +95,17 @@ main{
     display: flex;
     flex-direction: column;
 }
-blockquote{
-  
+/*
+LOCAL
+*/
+blockquote{  
     font-size: 1.15rem;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     line-height: 1.35;
     font-style: italic;       
     margin-bottom: 1.25rem;    
-    /*border-left: 3px solid #ccc;*/
- 
+    /*border-left: 3px solid #ccc;*/ 
 }
 .titulo {
   text-transform: uppercase !important;
@@ -127,6 +133,3 @@ blockquote{
   max-height: 600px;
 } */
 
-/*
-PESTE
-*/

@@ -14,13 +14,13 @@ const Index = () => (
     <Seo title="home" description="Creando arte multimedia alquímico y político en medio de la debacle pandémica, telúrica, económica y cultural" />
     <SimpleHero>
       <BannerHero
-        title="Apo"
-        title2="Kapital"
-        title3="ipsis"
+        title="Apo "
+        title2="Das Kapital"
+        title3=" ipsis"
         info=" DIBUJOS | CALIGRAFÍAS | VOLÚMENES"
       >
         <AniLink fade to="/peste" className="btn-white">
-          la peste
+          Tema: la peste
         </AniLink>
       </BannerHero>
     </SimpleHero>    
