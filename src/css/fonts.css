@@ -1,0 +1,46 @@
+
+  @font-face {
+    font-family: "URWDIN-Bold";
+    src: url("../fonts/URWDIN-Bold.woff");
+  } 
+  @font-face {
+    font-family: "URWDIN-Light";
+    src: url("../fonts/URWDIN-Light.woff");
+  }
+  @font-face {
+    font-family: "URWDIN-XLight";
+    src: url("../fonts/URWDIN-XLight.woff");
+  }
+  @font-face {
+    font-family: "URWDIN-Demi";
+    src: url("../fonts/URWDIN-Demiy.otf");
+  }
+  @font-face {
+    font-family: "KG All of Me";
+    src: url("../fonts/KG All of Me.woff");
+  } 
+  @font-face {
+    font-family: "Brolga";
+    src: url("../fonts/Brolga.woff");
+  }
+  @font-face {
+    font-family: "ZineSlabDis";
+    src: url("../fonts/ZineSlabDis-BoldRoman.woff");
+  }
+  @font-face {
+    font-family: "DoomsDay";
+    src: url("../fonts/DoomsDay.woff");
+  }
+  @font-face {
+    font-family: "swindale";
+    src: url("../fonts/swindalerough-rg-webfont.woff");
+  }
+  @font-face {
+    font-family: "TTCorals";
+    src: url("../fonts/TTCorals Thin.woff");
+  }
+ 
+
+  
+ 
+ 

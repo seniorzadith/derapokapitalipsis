@@ -1,5 +1,6 @@
 .despacho {
     padding: 3rem 0;
+    margin: 2rem 0;
   }
   .center {
     width: 66vw;
@@ -12,11 +13,7 @@
   }
   .despacho h1{
     font-size: 2rem;
-  }
-
-  .despacho {
-    margin: 2rem 0;
-  }
+  }  
   .despacho img {
     max-width: 70vw;
   }
@@ -34,4 +31,7 @@
     color: rgb(255, 123, 0);
     font-weight: bold;
     font-size: 1.25rem;
+  }
+.image {
+    box-shadow: var(--lightShadow);
   }

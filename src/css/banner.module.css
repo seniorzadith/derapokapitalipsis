@@ -19,7 +19,7 @@
   font-style: italic;
 }
 .marca {
-  color: darkorange !important;
+  color: rgb(255, 0, 21) !important;
 }
 .margen{
   margin-top: 1rem;
@@ -29,7 +29,6 @@
     font-size: 4.5rem;
   }
   .banner p {
-    width: 60%;
-   
+    width: 60%;   
   }
 }

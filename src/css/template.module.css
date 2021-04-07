@@ -25,7 +25,6 @@
   margin-bottom: 1rem;
   line-height: 1.33rem;
 }
-
 .info {
   display: flex;
   flex-wrap: wrap;
@@ -48,7 +47,6 @@
   text-transform: capitalize;
   font-size: 2.25rem ;
   line-height: 2.5rem;
-
 }
 .template h2 {
   margin: 2rem 0;
@@ -57,7 +55,6 @@
 .parrafo{
   margin-top: 1.5rem !important;
 }
-
 @media screen and (min-width: 992px) {
   .journey,
   .desc {

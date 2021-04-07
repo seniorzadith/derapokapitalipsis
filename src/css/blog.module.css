@@ -36,7 +36,6 @@
   background: var(--mainWhite);
   color: var(--primaryColor);
 }
-
 @media screen and (min-width: 576px) {
   .center {
     grid-template-columns: repeat(auto-fill, minmax(368.66px, 1fr));

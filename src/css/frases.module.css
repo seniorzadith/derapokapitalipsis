@@ -5,6 +5,11 @@
     font-size: 2rem;
     line-height: 2.2rem;;
   }
+  .frase {
+    margin: 1rem 0;
+    text-align: left;
+    font-style: italic;
+  }
   .center {
     width: 75vw;
     margin: 0 auto;
@@ -12,11 +17,7 @@
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-column-gap: 2rem;
   }
-  .frase {
-    margin: 1rem 0;
-    text-align: left;
-    font-style: italic;
-  }
+ 
   
  
   

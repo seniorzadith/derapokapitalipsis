@@ -4,8 +4,7 @@
   }
   .quipu:hover {
     box-shadow: var(--darkShadow);
-  }
-  
+  }  
   .img-container {
     position: relative;
     background: var(--primaryColor);
@@ -16,8 +15,7 @@
   }
   .img-container:hover .img {
     opacity: 0.3;
-  }
-  
+  }  
   .link {
     position: absolute;
     top: 50%;
@@ -49,8 +47,7 @@
   .footer h3 {
     text-transform: capitalize;
     margin-top: 1.5rem;
-    margin-bottom:1rem;
-    
+    margin-bottom:1rem;    
   }
   .date {
     position: absolute;
