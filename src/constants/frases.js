@@ -1,21 +1,21 @@
 /* eslint import/no-anonymous-default-export: [2, {"allowArray": true}] */
 export default [
   {    
-    text: "Una luminosa mañana de mayo, la esbelta amazona pasea por un florido sendero del Bois de Boulogne sobre su yegua alazana.",
+    text: "Una luminosa mañana de septiembre, la esbelta amazona pasea por el solitario sendero que bordea el Central Park de Nueva York.",
   },
   {    
-    text: "Aquella mañana primaveral, una amazona cabalga pensativa entre las flores que bordean una caminería del Bois de Boulogne.",
+    text: "Aquella mañana primaveral, una amazona cabalga pensativa entre las flores que bordean una caminería del Central Park de Nueva York.",
   },
   {    
-    text: "Esa mañana Tinou Rouquette recorre lentamente una avenida bordeada de flores del Bois de Boulogne sobre su corcel alazán.",
+    text: "Esa mañana la trasplantada Titina Recocabechea recorre lentamente la avenida bordeada de flores que atraviesa el Central Park de Nueva York.",
   },
   {    
-    text: "Montando una hermosa yegua alazana la altiva amazona pasea temprano en una lejana caminería florida del Bois de Boulogne.",
+    text: "Montando una hermosa yegua alazana la altiva amazona pasea temprano en la caminería repleta de trotadores del Central Park de Nueva York.",
   },
   {    
-    text: "Una elegante amazona pasea una cálida mañana primaveral en una lejana caminería del Bois de Boulogne al trote de su yegua alazana.",
+    text: "Una elegante amazona pasea una cálida mañana primaveral entre una multitud de trotadores y patineteros que pueblan el Central Park de la Gran Manzana.",
   },
   {    
-    text: "En una cálida mañana primaveral la misteriosa amazona conduce una nerviosa yegua alazana por la silenciosa caminería del Bois de Boulogne.",
+    text: "En una cálida mañana primaveral la misteriosa amazona conduce una nerviosa yegua alazana mientras acecha el asesino serial del Central Park de Nueva York.",
   },
 ]
