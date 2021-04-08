@@ -2,11 +2,12 @@
     padding: 4rem 0;
   }
   .center {
-    width: 66vw;
+    width: 80vw;
     margin: 0 auto;
   }
   .blog h1,
   .blog h4 {
+    font-family: URWDIN-Light;
     text-transform: capitalize;
   }
   .post {
@@ -25,4 +26,10 @@
   }
   .image {
     box-shadow: var(--lightShadow);
+  }
+  @media screen and (min-width: 1200px) {
+    .center {
+      width: 66vw;
+      max-width: 1170vw;
+    }
   }

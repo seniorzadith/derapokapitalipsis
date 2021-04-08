@@ -63,3 +63,9 @@
   margin-bottom: 1.5rem !important;
   padding-bottom: ;
 }
+@media screen and (min-width: 1200px) {
+  .center {
+    width: 66vw;
+    max-width: 1170vw;
+  }
+}

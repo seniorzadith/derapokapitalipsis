@@ -5,11 +5,11 @@
   }
   .banner h1 {
     font-family: "TheSerifBold" !important;
-    font-size: 1rem !important;
+    font-size: 0.8rem !important;
     /*text-transform: uppercase;*/
     margin-bottom: 1.2rem;
     padding: 0 1rem;
-    letter-spacing: 6px;
+    letter-spacing: 3px;
   }
   .banner p {
     /*width: 100%;*/

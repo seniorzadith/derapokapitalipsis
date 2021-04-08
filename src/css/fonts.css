@@ -4,6 +4,10 @@
     src: url("../fonts/URWDIN-Bold.woff");
   } 
   @font-face {
+    font-family: "URWDIN-Black";
+    src: url("../fonts/URWDIN-Black.woff");
+  } 
+  @font-face {
     font-family: "URWDIN-Light";
     src: url("../fonts/URWDIN-Light.woff");
   }
@@ -12,7 +16,7 @@
     src: url("../fonts/URWDIN-XLight.woff");
   }
   @font-face {
-    font-family: "KG All of Me";
+    font-family: "KGAllOffMe";
     src: url("../fonts/KG All of Me.woff");
   } 
   @font-face {
