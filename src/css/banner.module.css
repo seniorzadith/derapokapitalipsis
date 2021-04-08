@@ -4,11 +4,11 @@
   color: var(--mainWhite);
 }
 .banner h1 {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   text-transform: uppercase;
   margin-bottom: 1.5rem !important;
   padding: 0 1rem;
-  letter-spacing: 6px;
+  letter-spacing: 4px;
 }
 .banner p {
   width: 85%;
@@ -26,7 +26,7 @@
 }
 @media screen and (min-width: 768px) {
   .banner h1 {
-    font-size: 4.5rem;
+    font-size: 4rem;
   }
   .banner p {
     width: 60%;   

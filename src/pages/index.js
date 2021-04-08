@@ -18,7 +18,7 @@ const Index = () => (
         info=" DIBUJOS | CALIGRAFÍAS | VOLÚMENES"
       >
         <AniLink fade to="/peste" className="btn-white">
-          Tema: la peste
+          nuevo = la peste
         </AniLink>
       </BannerHero>
     </SimpleHero>    

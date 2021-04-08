@@ -2,7 +2,7 @@
     padding: 4rem 0;
   }
   .peste-center {
-    width: 75vw;
+    width: 85vw;
     margin: 0 auto;
   }
   .peste-img {
@@ -52,7 +52,7 @@
 }
 @media screen and (min-width: 1200px) {
   .center {
-    width: 60vw !important;
+    width: 66vw !important;
     max-width: 1170vw;
   }
   

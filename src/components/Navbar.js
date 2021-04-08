@@ -16,7 +16,7 @@ const Navbar = () => {
     <nav >
       <div className={navCenter}>
         <div className={navHeader}>
-          <img src={logo} alt="Firma de Peli" height="50" className="logo"/>
+          <img src={logo} alt="Firma de Peli" height="40" className="logo"/>
           <button type="button" className={logoBtn} onClick={toggleNav}>
             <FaAlignLeft className={logoIcon} />
           </button>

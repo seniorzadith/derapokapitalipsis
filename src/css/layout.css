@@ -17,7 +17,7 @@ body {
   --darkGrey: #aa9f9f;
   --ultraGrey: #8f8c8c ;
   --mainTransition: all 0.3s linear;
-  --mainSpacing: 4px;
+  --mainSpacing: 2px;
   --lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
   --darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
 }
@@ -72,7 +72,7 @@ a {
   font-style: italic;
   letter-spacing: var(--mainSpacing);
   color: var(--mainWhite);
-  border: 2px solid var(--mainWhite);
+  border: 1px solid var(--mainWhite);
   padding: 0.5rem 1.2rem;
   display: inline-block;
   transition: var(--mainTransition);
@@ -127,7 +127,7 @@ blockquote{
 }
 .banner {
   text-align: center;
-  letter-spacing: var(--mainSpacing);
+  /*letter-spacing: var(--mainSpacing);*/
   color: var(--mainWhite);
 }
 /* .gatsby-image-wrapper {

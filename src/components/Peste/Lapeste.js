@@ -42,7 +42,7 @@ const Lapeste = () => {
           </article>
           <article className={pesteInfo}>
           <p className="parrafo">
-              <em>Propongo continuar el empeño de Grand, considerando que 73 años después los seres humanos no hemos cambiado radicalmente y que la pandemia planetaria que nos agobia reproduce con creces el contexto de su esfuerzo literario en cuarentena. Una manera de homenajear el genio de Albert Camus y recomendarte que busques y leas ya <strong>La peste</strong>. ¿Quién quita que por fin alguien logre palabras y sintaxis exacta para la escena  que tiene en mente para la novela del siglo y obligue a los editores a sacarse el sombrero? Puede que nazca la frase genial en modo Grand antes que lluevan vacunas. Publico algunas para miproyecto de novela. Envíame la tuya y la añado.</em>
+              <em>Propongo continuar el empeño de Grand, considerando que 73 años después los seres humanos no hemos cambiado radicalmente y que la pandemia planetaria que nos agobia reproduce con creces el contexto de su esfuerzo literario en cuarentena. Una manera de homenajear el genio de Albert Camus y recomendarte que busques y leas ya <strong>La peste</strong>. ¿Quién quita que por fin alguien logre palabras y sintaxis exacta para la escena  que tiene en mente para la novela del siglo y obligue a los editores a sacarse el sombrero? Puede que nazca la frase genial en modo Grand antes que lluevan vacunas. Publico algunas para mi proyecto de novela. Envíame la tuya y la añado.</em>
               </p>    
          </article>        
       </div>

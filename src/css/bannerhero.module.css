@@ -1,33 +1,33 @@
 .banner {
+    max-width: 80vw !important;
     text-align: center;
-    letter-spacing: var(--mainSpacing);
+    /*letter-spacing: var(--mainSpacing);*/
     color: var(--mainWhite);
+    padding: 0 1.5rem;
+    
   }
   .banner h1 {
     font-family: "TheSerifBold" !important;
-    font-size: 0.8rem !important;
+    /*font-size: 0.5rem !important;*/
     /*text-transform: uppercase;*/
-    margin-bottom: 1.2rem;
-    padding: 0 1rem;
-    letter-spacing: 3px;
+    margin-bottom: 1.5rem;    
+    
   }
-  .banner p {
-    /*width: 100%;*/
+  .banner p {    
     margin:  auto;
     margin-bottom: 2rem;
-    font-family: 'URWDIN-XLight', sans-serif;
-    font-size: 0.8rem;
-    font-style: italic;
+    font-family: 'URWDIN-Light', sans-serif;
+    font-size: 0.6rem !important;    
   }
   .marca {
-    color: rgb(1, 255, 56) !important;
+    color: rgb(22, 255, 1) !important;
   }
   .margen{
     margin-top: 1rem;
   }
   @media screen and (min-width: 768px) {
     .banner h1 {
-      font-size: 5rem !important;
+      font-size: 4rem !important;
       margin-bottom: 1.5rem;
     }
     .banner p {
