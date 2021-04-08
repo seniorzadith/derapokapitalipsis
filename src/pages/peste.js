@@ -22,7 +22,7 @@ const peste = ({data}) => {
 }
 
 export const query = graphql`{
-  defaultPeste: file(relativePath: {eq: "intros/lapeste.jpg"}) {
+  defaultPeste: file(relativePath: {eq: "banner/defaultPeste.png"}) {
     childImageSharp {
       fluid(quality: 90, maxWidth: 4160) {
           ...GatsbyImageSharpFluid_withWebp
