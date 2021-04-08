@@ -12,8 +12,9 @@ const Index = () => (
     <SimpleHero>
       <BannerHero
         title="Apo"
-        title2="DasKapital"
+        title2="Kapital"
         title3="ipsis"
+        title4="2021"
         info=" DIBUJOS | CALIGRAFÍAS | VOLÚMENES"
       >
         <AniLink fade to="/peste" className="btn-white">

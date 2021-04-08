@@ -4,8 +4,8 @@
     color: var(--mainWhite);
   }
   .banner h1 {
-    font-family: "swindale" !important;
-    font-size: 2rem ;
+    font-family: "TheSerifBold" !important;
+    font-size: 1rem !important;
     /*text-transform: uppercase;*/
     margin-bottom: 1.2rem;
     padding: 0 1rem;
@@ -20,7 +20,7 @@
     font-style: italic;
   }
   .marca {
-    color: rgb(252, 7, 7) !important;
+    color: rgb(7, 247, 59) !important;
   }
   .margen{
     margin-top: 1rem;
@@ -32,7 +32,7 @@
     }
     .banner p {
       margin-top: 1.5rem !important;
-      font-size: 1.2rem;
+      font-size: 1rem;
       /*width: 60%;*/
      
     }
