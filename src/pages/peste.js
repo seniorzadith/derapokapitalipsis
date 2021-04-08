@@ -7,9 +7,7 @@ import Seo from "../components/SEO"
 import Alternativas from "../components/Peste/Alternativas"
 import AniLink from "gatsby-plugin-transition-link/AniLink";
 
-
-const peste = ({data}) => { 
- 
+const peste = ({data}) => {  
   return (
     <Layout>      
       <Seo title="la peste de albert camus rediviva" />

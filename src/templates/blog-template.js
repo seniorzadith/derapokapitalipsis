@@ -5,7 +5,6 @@ import {blog, center, image} from "../css/singleblog.module.css"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 import StyledHero from "../components/StyledHero"
 import Image from "gatsby-image"
-//import { GatsbyImage } from "gatsby-plugin-image"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 
 const Blog = ({ data }) => {

@@ -59,20 +59,6 @@
 .info h4 {  
   margin-bottom: 0;
 }
-.country {
-  text-transform: capitalize;
-  color: var(--primaryColor);
-  display: flex;
-  align-items: center;
-}
-.icon {
-  margin-right: 0.4rem;
-}
-.details {
-  color: var(--darkGrey);
-  text-transform: uppercase;
-  text-align: right;
-}
 .aire {    
   margin-bottom: 1.5rem !important;
   padding-bottom: ;

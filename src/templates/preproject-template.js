@@ -4,7 +4,6 @@ import Layout from "../components/Layout"
 import StyledHero from "../components/StyledHero"
 import {template, center, images, image, parrafo  }from "../css/template.module.css"
 import Image from "gatsby-image"
-//import { GatsbyImage } from "gatsby-plugin-image"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 
 const Template = ({ data }) => {  

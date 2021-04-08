@@ -3,13 +3,10 @@ import Layout from "../components/Layout"
 import StyledHero from "../components/StyledHero"
 import { graphql } from "gatsby"
 import Contact from "../components/Contact/Contact"
-//import Seo from "../components/SEO"
-
 
 export default function contact({ data }) {
   return (
-    <Layout>
-      
+    <Layout>      
       <StyledHero img={data.defaultContact.childImageSharp.fluid} />
       <Contact />
     </Layout>

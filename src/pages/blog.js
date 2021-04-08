@@ -4,12 +4,12 @@ import Layout from "../components/Layout"
 import StyledHero from "../components/StyledHero"
 import { graphql } from "gatsby"
 import BlogList from "../components/Blog/BlogList"
-import Seo from "../components/SEO"
+
 
 const blog = ({ data }) => {
   return (
     <Layout>
-      <Seo title="Blog" />
+      
       <StyledHero img={data.defaultChasqui.childImageSharp.fluid} />
       <BlogList/>
     </Layout>

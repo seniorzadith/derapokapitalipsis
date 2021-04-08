@@ -48,7 +48,7 @@ const Footer = () => {
           )
         })}
       </div>
-      <p  className={credito}>DISEÑADO POR PELI CON BASE EN SMILGA UTILIZANDO GATSBY + GRAPHCMS. GRACIAS</p>
+      <p  className={credito}>DISEÑADO POR PELI CON BASE EN SMILGA UTILIZANDO GATSBY + GRAPHCMS. GRACIAS.</p>
     </footer>
   );
 }

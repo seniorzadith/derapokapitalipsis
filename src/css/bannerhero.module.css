@@ -4,10 +4,10 @@
     color: var(--mainWhite);
   }
   .banner h1 {
-    font-family: "Trixie-Cameo" !important;
-    font-size: 1.9rem !important;
+    font-family: "swindale" !important;
+    font-size: 2rem ;
     /*text-transform: uppercase;*/
-    margin-bottom: 1.2rem !important;
+    margin-bottom: 1.2rem;
     padding: 0 1rem;
     letter-spacing: 6px;
   }
@@ -27,7 +27,7 @@
   }
   @media screen and (min-width: 768px) {
     .banner h1 {
-      font-size: 5rem;
+      font-size: 5rem !important;
       margin-bottom: 1.5rem;
     }
     .banner p {

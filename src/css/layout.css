@@ -33,7 +33,7 @@ body {
   font-size: 1rem;
 }
 h1{
-  font-family: "Trixie-Cameo" !important;
+  font-family: "LetterGothic" !important;
   margin-bottom: 1.25rem;
   letter-spacing: var(--mainSpacing);
   line-height: 1.40rem;
@@ -58,8 +58,8 @@ a {
 }
 .defaultHero {
   min-height: calc(75vh - 42px);
-  background: linear-gradient(rgba(96, 181, 207, 0.7), rgba(0, 0, 0, 0.7)),
-    url("../images/default.png") center/cover no-repeat;
+  background: linear-gradient(rgba(104, 171, 192, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/default2.png") center/cover no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;

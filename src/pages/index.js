@@ -6,17 +6,14 @@ import About from "../components/Home/About"
 import Services from "../components/Home/Services"
 import AniLink from "gatsby-plugin-transition-link/AniLink";
 import FeaturedPreprojects from "../components/Home/FeaturedPreprojects"
-import Seo from "../components/SEO"
-
 
 const Index = () => (
-  <Layout>
-    <Seo title="home" description="Creando arte multimedia alquímico y político en medio de la debacle pandémica, telúrica, económica y cultural" />
+  <Layout>    
     <SimpleHero>
       <BannerHero
-        title="Apo "
-        title2="Das Kapital"
-        title3=" ipsis"
+        title="Apo"
+        title2="DasKapital"
+        title3="ipsis"
         info=" DIBUJOS | CALIGRAFÍAS | VOLÚMENES"
       >
         <AniLink fade to="/peste" className="btn-white">

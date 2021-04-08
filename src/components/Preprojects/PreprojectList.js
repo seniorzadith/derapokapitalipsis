@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import {preprojects, center} from "../../css/items.module.css"
+import {proprojects, center} from "../../css/items.module.css"
 import Preproject from "./Preproject"
 import Title from "../Title"
 
@@ -18,7 +18,7 @@ export default class PreprojectList extends Component {
 
   render() {
     return (
-      <section className={preprojects}>
+      <section className={proprojects}>
         <Title title="proyectos" subtitle="MMXXI" />
         <div className={center}>
           {this.state.sortedPreprojects.map(({ node }) => {
