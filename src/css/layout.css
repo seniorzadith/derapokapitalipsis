@@ -130,6 +130,9 @@ blockquote{
   /*letter-spacing: var(--mainSpacing);*/
   color: var(--mainWhite);
 }
+.listado{
+  margin-left: 1.5rem !important;
+}
 /* .gatsby-image-wrapper {
   max-height: 600px;
 } */
