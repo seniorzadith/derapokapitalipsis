@@ -3,6 +3,7 @@ import Title from "../Title"
 import {about, aboutCenter, aboutImg, imgContainer, aboutInfo} from "../../css/about.module.css"
 import { useStaticQuery, graphql } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image";
+import AniLink from "gatsby-plugin-transition-link/AniLink";
 
 const getAbout = graphql`query aboutImage {
   aboutImage: file(relativePath: {eq: "gente/peli_repollo.png"}) {
@@ -46,10 +47,10 @@ const About = () => {
           </p>
           <h5>2019 / 2021</h5>
           <p>
-            Otra vez el espacio-tiempo acelerado, peligrosamente curvo y entrópico. Puerto Montt en autobús para un festival de lambe lambe con participación de Lilian y luego algunos meses por Francia, Portugal y Suiza, celebrando con amigos de siempre y parientes generosos 20 años de amorosa convivencia. Ahora, aquí y ahora, Santiago de la Nueva Extremadura en Ñuñoa con Lilian, entre los vaivenes de la pandemia interminable, remezones telúricos, cerca de mis hermanos Pati y Marco, cerca de amigos generosos. ¿Qué? Todo por hacerse nuevamente. Memorias y proyectos. Aquí están. Porque si no ahora ¿cuándo?</p>
-          <button type="button" className="btn-primary">
-            eventualmente más detalles. No todavía.
-          </button>
+            Otra vez el espacio-tiempo acelerado, peligrosamente curvo y entrópico. Puerto Montt en autobús para un festival de lambe lambe con participación de Lilian y luego algunos meses por Francia, Portugal y Suiza, celebrando con amigos de siempre y parientes generosos 20 años de amorosa convivencia. Ahora, aquí y ahora, Santiago de la Nueva Extremadura en Ñuñoa con Lilian, entre los vaivenes de la pandemia interminable, remezones sociales y telúricos, cerca de mis hermanos Pati y Marco, cerca de entrañables amigos generosos. ¿Qué? Todo por hacerse nuevamente. Memorias y proyectos. Proyectos y memorias. Aquí están. Porque si no ahora ¿cuándo?</p>          
+          <AniLink fade to="/resumen/" className="btn-primary centrado">
+            Resumen
+          </AniLink>      
         </article>
       </div>
     </section>
